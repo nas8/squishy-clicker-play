@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#7fd3f5" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon-CiU0_jQB.svg" />
+    <title>Squishy Clicker</title>
+    
+    <style>html,body{overscroll-behavior:none;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;background:#d9f7ef;width:100%;height:100%;margin:0;padding:0;overflow:hidden}body{background:linear-gradient(#7fd3f5,#d9f7ef);position:fixed;top:0;bottom:0;left:0;right:0}#game{touch-action:none;position:absolute;top:0;bottom:0;left:0;right:0;overflow:hidden}#loading{z-index:10;color:#21475a;text-align:center;background:linear-gradient(#7fd3f5,#d9f7ef);place-content:center;justify-items:center;gap:16px;padding:0 16px;font:800 24px Segoe UI,Arial,sans-serif;display:grid;position:fixed;top:0;bottom:0;left:0;right:0}#loading svg{width:140px;height:140px;overflow:visible}#loading .ld-blob{transform-origin:70px 112px;transform-box:view-box;animation:1.1s cubic-bezier(.3,.6,.4,1) infinite ld-bounce}#loading .ld-dots{gap:8px;display:flex}#loading .ld-dots i{background:#ff7a59;border-radius:50%;width:10px;height:10px;animation:1.1s ease-in-out infinite ld-dot}#loading .ld-dots i:nth-child(2){animation-delay:.15s}#loading .ld-dots i:nth-child(3){animation-delay:.3s}@keyframes ld-bounce{0%,to{transform:translateY(0)scale(1.18,.8)}35%{transform:translateY(-30px)scale(.92,1.1)}60%{transform:translateY(-34px)scale(1)}88%{transform:translateY(0)scale(1)}}@keyframes ld-dot{0%,to{opacity:.45;transform:translateY(0)}40%{opacity:1;transform:translateY(-6px)}}@media (prefers-reduced-motion:reduce){#loading *{animation:none!important}}</style>
+    <script type="module" crossorigin src="./assets/index-DVdQMlEk.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/CanvasPool-BBaCDFz5.js">
+    <link rel="modulepreload" crossorigin href="./assets/Filter-qelorRfX.js">
+    <link rel="modulepreload" crossorigin href="./assets/canvasUtils-BQOEnC5M.js">
+    <link rel="modulepreload" crossorigin href="./assets/Cache-aklw1QBI.js">
+    <link rel="modulepreload" crossorigin href="./assets/GCManagedHash-D_B3Vrfc.js">
+    <link rel="modulepreload" crossorigin href="./assets/RenderTargetSystem--NFzHfjv.js">
+    <link rel="modulepreload" crossorigin href="./assets/getTextureBatchBindGroup-D__NJvir.js">
+    <link rel="modulepreload" crossorigin href="./assets/GraphicsContext-BKfURY4o.js">
+    <link rel="modulepreload" crossorigin href="./assets/BufferResource-Ca_PmamI.js">
+  <script>(function(){var u=new URL(location.href);if(!u.searchParams.has("lang")){u.searchParams.set("lang","en");history.replaceState(null,"",u);}})();</script>
+</head>
+  <body>
+    <!-- Без текста: язык игрока известен только после запуска SDK, название подставит main.ts в .ld-title -->
+    <div id="loading">
+      <svg viewBox="0 0 140 140" aria-hidden="true">
+        <defs><linearGradient id="ld-g" x2="0" y2="1"><stop stop-color="#b5f3e6"/><stop offset="1" stop-color="#4fcbb7"/></linearGradient></defs>
+        <ellipse cx="70" cy="122" rx="56" ry="12" fill="#ffffff" stroke="#9fd6cc" stroke-width="3"/>
+        <g class="ld-blob">
+          <path d="M22 96C20 56 44 40 70 40s50 16 48 56c0 14-22 18-48 18S22 110 22 96Z" fill="url(#ld-g)" stroke="#1d4656" stroke-width="5"/>
+          <ellipse cx="48" cy="60" rx="12" ry="6" fill="#fff" opacity=".6" transform="rotate(-25 48 60)"/>
+          <circle cx="56" cy="80" r="5" fill="#1d4656"/><circle cx="84" cy="80" r="5" fill="#1d4656"/>
+          <path d="M63 90q3.5 4 7 0q3.5 4 7 0" fill="none" stroke="#1d4656" stroke-width="3" stroke-linecap="round"/>
+          <ellipse cx="46" cy="90" rx="7" ry="4" fill="#ff8aa0" opacity=".5"/><ellipse cx="94" cy="90" rx="7" ry="4" fill="#ff8aa0" opacity=".5"/>
+        </g>
+      </svg>
+      <div class="ld-title"></div>
+      <div class="ld-dots"><i></i><i></i><i></i></div>
+    </div>
+    <div id="game"></div>
+  </body>
+</html>
